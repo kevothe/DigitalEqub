@@ -1,0 +1,15 @@
+.nav{
+    background-color:green;
+    display:flex;
+    flex-direction:row;
+    height:100px;
+}
+.logo{
+    margin-top:70px;
+}
+.me-auto{
+    margin-left:
+    300px
+    ;
+    justify-content:space-between;
+}
