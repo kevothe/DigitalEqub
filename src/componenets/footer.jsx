@@ -3,7 +3,7 @@ import '.././sass/app.scss';
 import {LinkContainer} from 'react-router-bootstrap';
 import {Nav} from "react-bootstrap";
 import { Icon } from '@iconify/react';
-import whiteLogo from'.././assets/Test.png';
+import whiteLogo from'.././assets/TEST.png';
 import playStore from'.././assets/download-1.png';
 import appStore from '.././assets/download-2.png';
 export default function FooterNew() {
