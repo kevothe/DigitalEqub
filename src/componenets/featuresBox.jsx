@@ -3,7 +3,8 @@ import '.././sass/app.scss';
 
 export default function FtBox() {
   return (
-    <div className=" foot_det d-flex flex-row  mx-1 justify-content-center mt-4 text-white pt-5 ">
+    <div style={{ background: 'linear-gradient(to right, rgba(50,186,134, 0.8), rgba(227,198,127,0.5))' }}
+    className=" foot_det d-flex flex-row  mx-1 justify-content-center mt-4 text-white pt-5 ">
 <div className=" col-6 md-4 mx-4 px-3">
 <div className="ftTitle mt-5">
            
@@ -20,7 +21,7 @@ export default function FtBox() {
 <div className="col-md-3 px-0 mr-5">
 
 <div>
- <img className=" img-fluid"src={require('C:/Users/hp/Desktop/digitalEqub/web/digital_equb/src/assets/cbe.png')}/>
+ <img className=" img-fluid"src={require('C:/Users/hp/Desktop/digitalEqub/web/digital_equb/src/assets/cbe.png')} alt=""/>
                
 </div>
                  </div>

@@ -1,10 +1,9 @@
 
 import '.././sass/app.scss';
-import { FontAwesomeIcon,FontAwesome } from '@fortawesome/react-fontawesome'
 export default function AboutTop() {
     
   return (
-    <div className=" about_det d-flex flex-row  mx-1 justify-content-center mt-4 text-black pt-5 ">
+    <div className=" about_det d-flex flex-column flex-lg-row  mx-1 my-5 justify-content-center mt-4 text-black pt-5 ">
 <div className=" col-6 md-4 mx-4 px-3 pr-3">
 <div className="img_title">
             
@@ -20,8 +19,8 @@ export default function AboutTop() {
 
 <div className="col-md-4 px-0 mr-5">
 
-<div>
- <img className=" img-fluid"src={require('C:/Users/hp/Desktop/digitalEqub/web/digital_equb/src/assets/cbe.png')}/>
+<div className="aboutImage px-5 py-5">
+ <img className=" img-fluid"src={require('C:/Users/hp/Desktop/digitalEqub/web/digital_equb/src/assets/cbe.png')} alt=""/>
                
 </div>
                  </div>

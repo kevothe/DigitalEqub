@@ -1,5 +1,5 @@
 import {Navbar,Nav,Container,NavDropdown} from "react-bootstrap";
-import '.././sass/nav.scss';
+import '.././sass/app.scss';
 export default function ContForm() {
   return (
     <div className="frm_con container-fluid">

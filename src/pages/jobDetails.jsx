@@ -11,11 +11,11 @@ export default function     JobDetails () {
         
     return(
         <>
-        <div className="job_listings">
-    <h3 className="text-center text-success">Job Listings</h3>  
+        <div className="job_listings mx-0">
+    <h3 className="text-center ">Job Listings</h3>  
 </div>
  
-<section className="wrapper_job_dit w-100 d-flex flex-row mx-5 justify-content-space-between">
+<section className="wrapper_job_dit w-100 d-flex flex-column flex-lg-row mx-5 justify-content-space-between">
     <div className="job_pin col-2 mr-3">
         <h2>
             Junior Dev
@@ -25,7 +25,7 @@ export default function     JobDetails () {
         </p>
         <nav>
             <LinkContainer to="/jobApplication">
-            <div className="form_btn px-5">
+            <div className="form_btn pl-5">
                 <p text-center>APPLY</p>
                     
                 

@@ -8,7 +8,7 @@ import {LinkContainer} from 'react-router-bootstrap';
 import {Navbar,Nav,Container} from "react-bootstrap";
 import Navigation from '../componenets/navigation' ;
 import Footer from '../componenets/footer';
-
+import { Icon } from '@iconify/react';
 
 export default function     Vacancy () {
    
@@ -42,16 +42,31 @@ export default function     Vacancy () {
   </form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+            <div className="d-flex flex-row">
+        <nav>
+   <LinkContainer to="/jobApplication">
+   <Nav.Link className="link-secondary text-black"><Button variant="secondary" onClick={handleClose}>
            Login
           </Button>
+          </Nav.Link>
+          </LinkContainer>
+            </nav>
+            <nav>
+   <LinkContainer to="/signUp">
+   <Nav.Link className="link-secondary text-black">
           <Button variant="secondary" onClick={handleClose}>
            signup
           </Button>
-          <label >Forgot password</label>
-    
-          
-        </Modal.Footer>
+          </Nav.Link>
+          </LinkContainer>
+            </nav>
+          <nav>
+   <LinkContainer to="/accountRecovery">
+            <Nav.Link className="link-secondary text-black"> Forgot Password</Nav.Link>
+            </LinkContainer>
+            </nav>
+</div>
+  </Modal.Footer>
       </Modal>
         <h1 className=" jobTitle text-success text-center">
         Job Listings 
@@ -63,27 +78,35 @@ export default function     Vacancy () {
             <div className="newsBox col-12 ml-0 d-flex flex-column overflow-auto">
            
             <div className="jobListing  border-bottom-2 d-flex flex-row">
-                <div className=" col-4">
-             <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
+                <div className="  justify-content-center col-4 mx-2 px-5 pt-2 mt-1">
+             <Button variant="primary" className ="rounded" onClick={handleShow}>
+        See Details
       </Button>
 
                 
         </div>
      <div className="newsDetails">
-        <p>
-            news
+        <p className="text-success">
+            Junior Developer
             </p>
             <p className="mt-0 pt-0">
-                f jdfh fdsfh dfh didf sdkhf dskjfhf jdfh fdsfh dfh didf sdkhf dskjfhf jdfh fdsfh dfh didf sdkhf dskjfhf jdfh fdsfh dfh didf sdkhf dskjfhf jdfh fdsfh dfh didf sdkhf dskjfhf jdfh fdsfh dfh didf sdkhf dskjfhf jdfh fdsfh dfh didf sdkhf dskjfhf jdfh fdsfh dfh didf sdkhf dskjfhf jdfh fdsfh dfh didf sdkhf dskjfhf jdfh fdsfh dfh didf sdkhf dskjfhf jdfh fdsfh dfh didf 
+               <ul>
+                <li>
+                    3 year experiance
+                    </li>
+                    <li>
+                        CS or Software degree
+                        </li>
+                </ul>
                 </p>
         </div>
             </div>
 
             <div className="jobListing d-flex flex-row">
                 <div className="newsImage col-4">
-     <img className="w-25 image-fluid" src={require('C:/Users/hp/Desktop/digitalEqub/web/digital_equb/src/assets/logoPic.png')} />
-     </div>
+                <Button variant="primary" className ="rounded" onClick={handleShow}>
+        See Details
+      </Button></div>
      <div className="newsDetails">
         <p>
             news
@@ -95,8 +118,9 @@ export default function     Vacancy () {
             </div>
             <div className="jobListing   d-flex flex-row">
                 <div className="newsImage col-4">
-     <img className="w-25 image-fluid" src={require('C:/Users/hp/Desktop/digitalEqub/web/digital_equb/src/assets/logoPic.png')} />
-     </div>
+                <Button variant="primary" className ="rounded" onClick={handleShow}>
+        See Details
+      </Button> </div>
      <div className="newsDetails">
         <p>
             news
@@ -108,8 +132,9 @@ export default function     Vacancy () {
             </div>
             <div className="jobListing   d-flex flex-row">
                 <div className="newsImage col-4">
-     <img className="w-25 image-fluid" src={require('C:/Users/hp/Desktop/digitalEqub/web/digital_equb/src/assets/logoPic.png')} />
-     </div>
+                <Button variant="primary" className ="rounded" onClick={handleShow}>
+        See Details
+      </Button> </div>
      <div className="newsDetails">
         <p>
             news
@@ -121,8 +146,9 @@ export default function     Vacancy () {
             </div>
             <div className="jobListing   d-flex flex-row">
                 <div className="newsImage col-4">
-     <img className="w-25 image-fluid" src={require('C:/Users/hp/Desktop/digitalEqub/web/digital_equb/src/assets/logoPic.png')} />
-     </div>
+                <Button variant="primary" className ="rounded" onClick={handleShow}>
+        See Details
+      </Button>  </div>
      <div className="newsDetails">
         <p>
             news
@@ -134,8 +160,9 @@ export default function     Vacancy () {
             </div>
             <div className="jobListing   d-flex flex-row">
                 <div className="newsImage col-4">
-     <img className="w-25 image-fluid" src={require('C:/Users/hp/Desktop/digitalEqub/web/digital_equb/src/assets/logoPic.png')} />
-     </div>
+                <Button variant="primary" className ="rounded" onClick={handleShow}>
+        See Details
+      </Button>  </div>
      <div className="newsDetails">
         <p>
             news
@@ -147,8 +174,9 @@ export default function     Vacancy () {
             </div>
             <div className="jobListing   d-flex flex-row">
                 <div className="newsImage col-4">
-     <img className="w-25 image-fluid" src={require('C:/Users/hp/Desktop/digitalEqub/web/digital_equb/src/assets/logoPic.png')} />
-     </div>
+                <Button variant="primary" className ="rounded" onClick={handleShow}>
+        See Details
+      </Button>  </div>
      <div className="newsDetails">
         <p>
             news

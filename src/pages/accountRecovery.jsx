@@ -1,10 +1,6 @@
 import React from 'react';
 import "react-bootstrap";
 import '.././sass/app.scss';
-import {LinkContainer} from 'react-router-bootstrap';
-import {Navbar,Nav,Container} from "react-bootstrap";
-import Navigation from '../componenets/navigation' ;
-import Footer from '../componenets/footer';
 export default function     AccountRecovery () {
     return(
     <>
@@ -35,7 +31,7 @@ export default function     AccountRecovery () {
     
   </div>
 
-  <button type="submit" className="btn btn-primary mt-4">send email</button>
+  <button type="submit" className="btn btn-primary mt-4">send recovery email</button>
 
 
 </form>

@@ -1,6 +1,15 @@
 @import "./variables.scss";
 @import "./bootstrap.scss";
 
+body{
+    background-color:white;
+    margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 .firstImp{
     height:500px;
     width:100%;
@@ -21,14 +30,10 @@ Navbar{
 nav{
     width:100% !important;
 }
-.nav_det{
-    height:120px;
-    width:100% ;
-   
-}
+
 .foot_det{
    width: 100%;
-   height:440px;
+   height:auto;
   
    background-color:#32BA86;
 }
@@ -52,9 +57,19 @@ width:200px;
 }
 .about_det{
     width: 100%;
-    height:500px;
-   
+    height:auto;
+   margin-top:100px;
     background-color:none;
+ }
+ .newsCon{
+    height:auto;
+ }
+ .cont{
+    width:auto;}
+ .newsBox{
+    width:auto;
+    height:400px;
+   
  }
 
  .service_body{
@@ -126,7 +141,7 @@ margin-top: 125px;
     margin-top: 0px;
 	position: relative;
 	width: 92%;
-	height: 560px;
+	height: auto;
 	overflow: hidden;
 	display: flex;
 	
@@ -160,3 +175,4 @@ margin-top: 125px;
     height:700px;
     margin-top:100px;
 }
+

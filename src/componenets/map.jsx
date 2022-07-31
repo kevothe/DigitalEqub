@@ -1,10 +1,9 @@
 import React from 'react'
 import GoogleMapReact from 'google-map-react'
-import { Icon } from '@iconify/react';
 
 
 
-import './map.css'
+import './map.scss'
 
 const LocationPin = ({ text }) => (
   <div className="pin">
