@@ -1,12 +1,13 @@
 import {LinkContainer} from 'react-router-bootstrap';
 import {Navbar,Nav,Container} from "react-bootstrap";
+import Logo from '../assets/logoPic.png';
 import '.././sass/app.scss';
 export default function Navigation() {
   return (
     <div className="nav_det fixed-top bg-white pt-4 px-5 pd-1">
 <Navbar bg="none"  expand="lg">
      
-        <Navbar.Brand className="navbrand pl-4" href="/"><img className=" pl-5 w-25" src={require('C:/Users/hp/Desktop/digitalEqub/web/digital_equb/src/assets/logoPic.png')}  alt="logo"/></Navbar.Brand>
+        <Navbar.Brand className="navbrand pl-4" href="/"><img className=" pl-5 w-25" src={Logo}  alt="logo"/></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="ml-4" id="basic-navbar-nav">
 
