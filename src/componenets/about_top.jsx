@@ -1,5 +1,6 @@
 
 import '.././sass/app.scss';
+import tempCbe from '.././assets/cbe.png';
 export default function AboutTop() {
     
   return (
@@ -20,7 +21,7 @@ export default function AboutTop() {
 <div className="col-md-4 px-0 mr-5">
 
 <div className="aboutImage px-5 py-5">
- <img className=" img-fluid"src={require('C:/Users/hp/Desktop/digitalEqub/web/digital_equb/src/assets/cbe.png')} alt=""/>
+ <img className=" img-fluid"src={tempCbe} alt=""/>
                
 </div>
                  </div>

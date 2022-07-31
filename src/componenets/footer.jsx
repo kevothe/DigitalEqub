@@ -1,15 +1,18 @@
 import React from 'react';
 import '.././sass/app.scss';
 import {LinkContainer} from 'react-router-bootstrap';
-import {Navbar,Nav,Container} from "react-bootstrap";
+import {Nav} from "react-bootstrap";
 import { Icon } from '@iconify/react';
+import whiteLogo from'.././assets/Test.png';
+import playStore from'.././assets/download-1.png';
+import appStore from '.././assets/download-2.png';
 export default function FooterNew() {
   return (
     <>
     <div className=" foot_det d-flex flex-column flex-lg-row   mx-0 justify-content-center mt-4 text-white py-5 ">
 <div className="about_footer col md-3 mt- mx-4 px-3">
 <div className="img_title d-flex flex-row ">
-            <img className="w-25"src={require('C:/Users/hp/Desktop/digitalEqub/web/digital_equb/src/assets/TEST.png')}  />
+            <img className="w-25"src={whiteLogo}  alt=""/>
     <h3 className="mt-5 pl-2">ABOUT US</h3>
         </div>
         
@@ -77,11 +80,11 @@ export default function FooterNew() {
 <div className="download_footer mt-5 col md-3 mx-3">
 <h3 >DOWNLOAD THE APP</h3>
 <div>
-<a href="https://play.google.com/store/apps/details?id=com.digital.equb" class="ctn_footer" > <img src={require('C:/Users/hp/Desktop/digitalEqub/web/digital_equb/src/assets/download-2.png')} /></a>
+<a href="https://play.google.com/store/apps/details?id=com.digital.equb" class="ctn_footer" > <img src={appStore} alt=""/></a>
                
 </div>
 <div className="pt-3">
-<a href="https://apps.apple.com/us/app/digital-equb" class="ctn_footer"><img src={require('C:/Users/hp/Desktop/digitalEqub/web/digital_equb/src/assets/download-1.png')} /></a>
+<a href="https://apps.apple.com/us/app/digital-equb" class="ctn_footer"><img src={playStore} alt =""/></a>
  
 </div>
                  </div>

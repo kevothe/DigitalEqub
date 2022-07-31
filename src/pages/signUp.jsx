@@ -1,10 +1,7 @@
 import React from 'react';
 import "react-bootstrap";
 import '.././sass/app.scss';
-import {LinkContainer} from 'react-router-bootstrap';
-import {Navbar,Nav,Container} from "react-bootstrap";
-import Navigation from '../componenets/navigation' ;
-import Footer from '../componenets/footer';
+
 export default function     SignUp () {
     return(
     <>

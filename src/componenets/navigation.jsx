@@ -1,6 +1,6 @@
 import {LinkContainer} from 'react-router-bootstrap';
-import {Navbar,Nav,Container} from "react-bootstrap";
-import Logo from '../assets/logoPic.png';
+import {Navbar,Nav} from "react-bootstrap";
+import Logo from '.././assets/logoPic.png';
 import '.././sass/app.scss';
 export default function Navigation() {
   return (

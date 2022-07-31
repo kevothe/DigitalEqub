@@ -1,12 +1,13 @@
 import {Carousel} from "react-bootstrap";
 import "../sass/app.scss";
+import tempCarausel from '.././assets/money-605075.jpg';
 export default  function Slides() {
   return (
     <Carousel variant="dark">
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={require('C:/Users/hp/Desktop/digitalEqub/web/digital_equb/src/assets/money-605075.jpg')}
+          src={tempCarausel}
            alt="First slide"
         />
         <Carousel.Caption>
@@ -17,7 +18,7 @@ export default  function Slides() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={require('C:/Users/hp/Desktop/digitalEqub/web/digital_equb/src/assets/money-605075.jpg')}
+          src={tempCarausel}
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -28,7 +29,7 @@ export default  function Slides() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={require('C:/Users/hp/Desktop/digitalEqub/web/digital_equb/src/assets/money-605075.jpg')}
+          src={tempCarausel}
            alt="Third slide"
         />
         <Carousel.Caption>
