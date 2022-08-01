@@ -86,11 +86,11 @@ export default function FooterNew() {
 <div className="download_footer mt-5 col md-3 mx-3">
 <h3 >DOWNLOAD THE APP</h3>
 <div>
-<a href="https://play.google.com/store/apps/details?id=com.digital.equb" class="ctn_footer" > <img src={appStore} alt=""/></a>
+<a href="https://apps.apple.com/us/app/digital-equb" class="ctn_footer" > <img src={appStore} alt=""/></a>
                
 </div>
 <div className="pt-3">
-<a href="https://apps.apple.com/us/app/digital-equb" class="ctn_footer"><img src={playStore} alt =""/></a>
+<a href="https://play.google.com/store/apps/details?id=com.digital.equb" class="ctn_footer"><img src={playStore} alt =""/></a>
  
 </div>
                  </div>
@@ -101,33 +101,34 @@ export default function FooterNew() {
                </p>
                 <div className="col-3 md-3 d-flex flex-row  px-3 mr-4 justify-content-between pt-2 ">
                  <div classsName="mr-3">
+                  <a href='https://www.facebook.com/DigitalEqub/ '>
                  <Icon icon="akar-icons:facebook-fill" color="#e3c67f" width="20" />
-                  
+                 </a>
                  </div>
                    
               <div>
-                <a href="/">
+                <a href="https://www.instagram.com/digitalequb/ ">
              <Icon icon="entypo-social:instagram" color="#e3c67f" width="20"/>
                  </a>
               </div>
               <div>
-              <a href="/">
+              <a href=" https://t.me/digitalequb/ ">
              <Icon icon="cib:telegram" color="#e3c67f" width="20"/>
                  </a> 
               </div>
               <div>
-              <a href="/">
-              <Icon icon="eva:email-fill" color="#E3C67F" width="20" />
+              <a href="https://www.tiktok.com/@digitalequb?">
+              <Icon icon="cib:tiktok" color="#E3C67F" width="20" />
                  </a>
               </div>
               <div>
-              <a href="/">
+              <a href="https://twitter.com/digitalequb/ ">
             <Icon  icon="ant-design:twitter-circle-filled" color="#e3c67f" width="20"/>
               </a>
               </div>
               <div>
-              <a href="/">
-              <Icon icon="akar-icons:github-fill" color="#e3c67f" width="20"/>
+              <a href="https://www.linkedin.com/company/digitalequb/ ">
+              <Icon icon="akar-icons:linkedin" color="#e3c67f" width="20"/>
                  </a>
               </div>
                 

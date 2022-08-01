@@ -1,6 +1,7 @@
 import 'react-bootstrap';
 import '.././sass/app.scss';
-import tempCbe from'.././assets/cbe.png';
+
+import logo from '.././assets/Artboard 1@15x.png'
 
 export default function FtBox() {
   return (
@@ -22,7 +23,7 @@ export default function FtBox() {
 <div className="col-md-3 px-0 mr-5">
 
 <div>
- <img className=" img-fluid"src={tempCbe} alt=""/>
+ <img className=" img-fluid"src={logo} alt=""/>
                
 </div>
                  </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import '.././sass/app.scss';
-import image from '../assets/adult-18377_1920.jpg';
+import image from '../assets/money-605075.jpg';
 import playStore from'.././assets/download-1.png';
 import logo from'.././assets/logoPic.png';
 import appStore from '.././assets/download-2.png';
@@ -20,14 +20,15 @@ export default function News() {
             Digital Equb
             </h1>
             <h1 className="mt-3">
-            liyunetachen wastenachen nw
+            ሊዩነትአችን ዋስትናችን ነው
             </h1>
             <div className="mt-5">
-<a href="https://play.google.com/store/apps/details?id=com.digital.equb" class="ctn_footer" > <img src={appStore} alt=""/></a>
+<a href="https://apps.apple.com/us/app/digital-equb" class="ctn_footer" > <img src={appStore} alt=""/></a>
                
 </div>
 <div className="pt-4 ">
-<a href="https://apps.apple.com/us/app/digital-equb" class="ctn_footer"><img src={playStore} alt=""/></a>
+
+<a href="https://play.google.com/store/apps/details?id=com.digital.equb" class="ctn_footer"><img src={playStore} alt=""/></a>
  
 </div>
         </div>

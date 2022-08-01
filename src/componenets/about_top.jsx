@@ -1,6 +1,7 @@
 
 import '.././sass/app.scss';
-import tempCbe from '.././assets/cbe.png';
+
+import logo from'.././assets/Artboard 1 copy 4@15x.png';
 export default function AboutTop() {
     
   return (
@@ -21,7 +22,7 @@ export default function AboutTop() {
 <div className="col-md-4 px-0 mr-5 d-none d-md-block">
 
 <div className="aboutImage px-5 py-5">
- <img className=" img-fluid"src={tempCbe} alt=""/>
+ <img className=" img-fluid"src={logo} alt=""/>
                
 </div>
                  </div>
