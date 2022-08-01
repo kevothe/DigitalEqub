@@ -18,7 +18,7 @@ export default function AboutTop() {
 
 
 
-<div className="col-md-4 px-0 mr-5">
+<div className="col-md-4 px-0 mr-5 d-none d-md-block">
 
 <div className="aboutImage px-5 py-5">
  <img className=" img-fluid"src={tempCbe} alt=""/>

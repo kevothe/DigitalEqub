@@ -24,25 +24,25 @@ export default function     JobApp () {
   </div>
   <div className="form-group mt-4">
    
-    <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
+    <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Enter email"/>
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div className="form-group mt-4">
    
-    <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="confirm email"/>
+    <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="confirm email"/>
      </div>
   <div className="form-group mt-4">
   
-    <input type="tel" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="phone"/>
+    <input type="tel" class="form-control"  aria-describedby="emailHelp" placeholder="phone"/>
       </div>
   <div className="form-group mt-4">
   <small class="form-text text-muted" id="emailHelp"> Resume</small>
-    <input type="file" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="upload coverletter"/>
+    <input type="file" class="form-control"  aria-describedby="emailHelp" placeholder="upload coverletter"/>
       </div>
       <div className="form-group mt-4">
       <small class="form-text text-muted"> Cover letter</small>
 
-   <input type="file" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="upload cv"/>
+   <input type="file" class="form-control"  aria-describedby="emailHelp" placeholder="upload cv"/>
      </div>
   <div className="form-group mt-4 d-flex flex-row justify-content-space-between">
     <div className="col-5 pr-3">

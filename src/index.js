@@ -16,6 +16,7 @@ import Vacancy from './pages/vacancy';
 import JobDetails from './pages/jobDetails';
 import JobApp from './pages/jobApplication';
 import SignUp from './pages/signUp';
+import Faq from './pages/faq';
 import AccountRecovery from './pages/accountRecovery'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -42,6 +43,7 @@ root.render(
            <Route path ="/jobDet" element={<JobDetails/>}/>
            <Route path ="/jobApplication" element ={<JobApp/>}/>
            <Route path ="/signUp" element ={<SignUp/>}/>
+           <Route path ="/faq" element ={<Faq/>}/>
            <Route path ="/accountRecovery" element ={<AccountRecovery/>}/>
            <Route path="*" element={
            <div className="errorPage">

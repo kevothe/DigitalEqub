@@ -12,7 +12,7 @@ export default function News() {
 
 
 
-<div className="  newsCon d-flex flex-column flex-lg-row mx-0  mt-5 text-black  " >
+<div className="  newsCon  flex-column flex-lg-row mx-0  mt-5 text-black  d-flex" >
     <div className="cont col-8 d-flex flex-column  px-5 py-3" style={{
        backgroundImage: `url(${image})`
     }}>
@@ -31,7 +31,7 @@ export default function News() {
  
 </div>
         </div>
-          <div className="newsBox col-4 ml-0 d-flex flex-column overflow-auto">
+          <div className="newsBox col-4 ml-0 d-none d-md-flex flex-column overflow-auto">
             <div className="newsContainer border-bottom-2 d-flex flex-row">
                 <div className="newsImage col-4">
      <img className="w-75 image-fluid" src={logo} alt=""/>

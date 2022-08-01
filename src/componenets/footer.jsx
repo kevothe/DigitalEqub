@@ -16,7 +16,7 @@ export default function FooterNew() {
     <h3 className="mt-5 pl-2">ABOUT US</h3>
         </div>
         
-    <p className="mt-2">
+    <p className="mt-2 ">
           Ut sem nulla pharetra diam sit amet nisl suscipit adipiscing. Tristique senectus et netus et malesuada fames ac. Ac odio tempor orci dapibus ultrices in iaculis.
     </p>
 </div>
@@ -58,6 +58,12 @@ export default function FooterNew() {
             <nav>
             <LinkContainer to="/vacancy">
             <Nav.Link className="link-secondary text-white"> <Icon icon=" bxs:briefcase" color="#E3C67F"  />Vacancy</Nav.Link>
+            </LinkContainer>
+            </nav>
+
+            <nav>
+            <LinkContainer to="/faq">
+            <Nav.Link className="link-secondary text-white"> <Icon icon=" carbon:phone-filled" color="#E3C67F"  />FAQ</Nav.Link>
             </LinkContainer>
             </nav>
     </div>
