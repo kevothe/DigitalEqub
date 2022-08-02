@@ -27,7 +27,7 @@ export default function     AccountRecovery () {
       <h3 className="text-center text-success ">Find account</h3>
     <div className="form-group mt-3">
    
-    <input type="text" class="form-control" id="InputFirstName" aria-describedby="emailHelp" placeholder="Enter email"/>
+    <input type="text" className="form-control bg-white" id="InputFirstName" aria-describedby="emailHelp" placeholder="Enter email"/>
     
   </div>
 
