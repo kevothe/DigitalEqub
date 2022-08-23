@@ -7,22 +7,22 @@ export default function ContForm() {
       <h1>Get in touch</h1>
     <div className="form-group">
    
-    <input type="text" class="form-control" id="InputFirstName" aria-describedby="emailHelp" placeholder="Enter firstname"/>
+    <input type="text" className="form-control bg-white" id="InputFirstName" aria-describedby="emailHelp" placeholder="Enter firstname"/>
     
   </div>
   <div className="form-group mt-4">
    
-    <input type="text" class="form-control" id="InputFirstName" aria-describedby="emailHelp" placeholder="Enter lastname"/>
+    <input type="text" className="form-control bg-white" id="InputFirstName" aria-describedby="emailHelp" placeholder="Enter lastname"/>
     
   </div>
   <div className="form-group mt-4">
    
-    <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Enter email"/>
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <input type="email" className="form-control bg-white"  aria-describedby="emailHelp" placeholder="Enter email"/>
+    <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div className="form-group mt-4">
    
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter comments"></textarea>
+  <textarea className="form-control bg-white" id="exampleFormControlTextarea1" rows="3" placeholder="Enter comments"></textarea>
  
   </div>
   
