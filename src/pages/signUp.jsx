@@ -1,73 +1,71 @@
-import React from 'react';
-import { useForm } from "react-hook-form";
+
+import React,{useState} from 'react';
 import "react-bootstrap";
 import '.././sass/app.scss';
+import { signup} from '.././util/APIUtils';
 
-export default function     SignUp () {
-const{register,handleSubmit,formState:{errors}}=useForm();
+export default function SignUp () {
+  
+const [actName,setFullname]=useState("");
+const [actUsername,setUsername]=useState("");
+const [actEmail,setEmail]=useState("");
+const [actPassword,setPassword]=useState("");
+const signupRequest = {
+  name: actName,
+  email: actEmail,
+  username: actUsername,
+  password: actPassword      };
+  console.log(signupRequest.name)
+  signup(signupRequest)
+      .then(response => {
+          alert.success({
+          
+              message: 'Digital Equb',
+              description: "Thank you! You're successfully registered. Please Login to continue!",
+          });          
+          this.props.history.push("/login");
+      }).catch(error => {
+          alert.error({
+              message: 'Digital Equb',
+              description: error.message || 'Sorry! Something went wrong. Please try again!'
+          });
+      });
+ 
   return(
     <>
     <div className="jobApp w-100 flex-row d-flex justify-content-center">
-    <form onSubmit={handleSubmit((data=>console.log(data)) )}>
+    <form >
       <h3 className="text-center text-success ">Sign Up</h3>
     <div className="form-group mt-3">
    
-    <input {...register("firstName",{ pattern:{
-      value:/^[A-Za-z]+$/,
-      message:"please enter your first name"
-    } }, { required: "first name is required"
-  })} type="text" className="form-control bg-white" id="InputFirstName" aria-describedby="emailHelp" placeholder="Enter firstname"/>
-    <p> {errors.firstName?.message}</p>
+    <input  value ={actName} onChange={(event)=>setFullname(event.target.value)} type="text" className="form-control bg-white" id="InputFullName"  placeholder="Enter fullname"/>
+   
+  </div>
+  <div className="form-group mt-3">
+   
+    <input  value ={actUsername} onChange={(event)=>setUsername(event.target.value)} type="text" className="form-control bg-white" id="InputUsername"  placeholder="Enter Username"/>
+   
   </div>
   
   <div className="form-group mt-4">
    
-    <input {...register("lastName" ,{ pattern:{
-      value:/^[A-Za-z]+$/,
-      message:"please enter your last name"
-    } },{ required: "lastname is required"
-    })} type="text" className="form-control bg-white" id="InputFirstName" aria-describedby="emailHelp" placeholder="Enter lastname"/>
+    <input value ={actEmail} onChange={(event)=>setEmail(event.target.value)} type="email" className="form-control bg-white" id="InputEmail"  placeholder="Enter email"/>
     
-    <p > {errors.lastName?.message}</p>
+ 
  
   </div>
  
-  <div className="form-group mt-4">
-   
-    <input {...register("email" ,{pattern:{
-      value:/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/,
-      message:"Please enter a valid email address"
-    }
-    })} type="email" className="form-control bg-white"  aria-describedby="emailHelp" placeholder="Enter email"/>
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
- 
-  </div>
-  <div className="form-group mt-4">
-   
-    <input {...register("password" , {pattern:{
-      value:/^(?=.*[\d])(?=.*[!@#$%^&*])[\w!@#$%^&*]{6,16}$/,
-      message:"password must be at least 6 characters long and must contain a number and special character"
-    }
   
-  })} type="password" className="form-control bg-white"  aria-describedby="emailHelp" placeholder="Enter password"/>
+  <div className="form-group mt-4">
+   
+    <input  value ={actPassword} onChange={(event)=>setPassword(event.target.value)} type="password" className="form-control bg-white"  placeholder="Enter password"/>
      </div>
  
   <div className="form-group mt-4">
   
-    <input {...register("phone" ,{
-      pattern:{
-        value:/[1-4]/g,
-        message:"Phone number must be a valid phone number"
-      }
-    })} type="tel" className="form-control bg-white"  aria-describedby="emailHelp" placeholder="phone"/>
-     
+    
   
-  <div className="form-group mt-4">
- 
-  
-  </div>
-  
-  <button type="submit" className="btn btn-primary rounded mt-3">Submit</button>
+  <button type="submit" className="btn btn-primary rounded mt-3" onClick={() => signup()}>Submit</button>
 </div>
 </form>
 
@@ -75,3 +73,5 @@ const{register,handleSubmit,formState:{errors}}=useForm();
         </>
         
     );}
+
+    

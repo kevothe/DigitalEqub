@@ -6,7 +6,8 @@ import {LinkContainer} from 'react-router-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import {Nav} from "react-bootstrap";
-
+import { login } from '.././util/APIUtils';
+import { ACCESS_TOKEN } from '.././constants';
 export default function     JobDetails () {
     
     const [show, setShow] = useState(false);
@@ -14,7 +15,26 @@ export default function     JobDetails () {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-        
+
+  const [actUsernameOrEmail,setUsernameOrEmail]=useState("");
+ 
+  const [actPassword,setPassword]=useState("");
+  const loginRequest={
+    usernameOrEmail:actUsernameOrEmail,
+    password:actPassword};
+ console.log(loginRequest.password)
+  login(loginRequest)
+                    .then(response => {
+                        localStorage.setItem(ACCESS_TOKEN, response.accessToken);
+                        console.log(ACCESS_TOKEN)
+                        this.props.onLogin();
+                    }).catch(error => {
+                        if(error.status === 401) {
+                              console.log('not found')               
+                        } else {
+                                                                    
+                        }
+                    });
     return(
         <>
 <Modal show={show} onHide={handleClose}>
@@ -22,15 +42,15 @@ export default function     JobDetails () {
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-        <form>
+        <form >
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
-    <input type="email" className="bg-white form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
+    <input id="exampleInputEmail1" name="usernameOrEmail"  type="email" className="bg-white form-control" value ={actUsernameOrEmail} onChange={(event)=>setUsernameOrEmail(event.target.value)} placeholder="Enter email"/>
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Password</label>
-    <input type="password" className="bg-white form-control" id="exampleInputPassword1" placeholder="Password"/>
+    <input  value ={actPassword} onChange={(event)=>setPassword(event.target.value)} name="password"  type="password" className="bg-white form-control" id="exampleInputPassword1" placeholder="Password"/>
   </div>
   <div class="form-check">
     <input type="checkbox" className=" bg-white form-check-input" id="exampleCheck1"/>
@@ -40,18 +60,13 @@ export default function     JobDetails () {
         </Modal.Body>
         <Modal.Footer>
             <div className="d-flex flex-row">
-        <nav>
-   <LinkContainer to="/jobApplication">
-   <Nav.Link className="link-secondary text-black"><Button variant="secondary" rounded onClick={handleClose}>
+     <Button onClick={() => login()} variant="secondary" htmlType="submit" rounded >
            Login
           </Button>
-          </Nav.Link>
-          </LinkContainer>
-            </nav>
-            <nav>
+           <nav>
    <LinkContainer to="/signUp">
    <Nav.Link className="link-secondary text-black">
-          <Button variant="secondary" rounded onClick={handleClose}>
+          <Button variant="secondary" rounded >
            signup
           </Button>
           </Nav.Link>
@@ -111,3 +126,5 @@ export default function     JobDetails () {
 
 </>
            );}
+
+           

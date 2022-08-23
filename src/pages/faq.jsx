@@ -4,6 +4,7 @@ import { MDBAccordion, MDBAccordionItem } from 'mdb-react-ui-kit';
 import '.././sass/app.scss';
 import "bootstrap/dist/css/bootstrap.min.css";
 import image from ".././assets/money-605075.jpg";
+
 export default function Faq () {
     
    
@@ -41,6 +42,7 @@ export default function Faq () {
       </MDBAccordionItem>
     </MDBAccordion>
 </div>
+
 </>
            
            );
