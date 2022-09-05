@@ -20,15 +20,15 @@ export default function News() {
             Digital Equb
             </h1>
             <h1 className="mt-3">
-            ሊዩነትአችን ዋስትናችን ነው
+            ልዩነትአችን ዋስትናችን ነው
             </h1>
             <div className="mt-5">
-<a href="https://apps.apple.com/us/app/digital-equb" class="ctn_footer" > <img src={appStore} alt=""/></a>
+<a href="https://play.google.com/store/apps/details?id=com.digital.equb" target="_blank" class="ctn_footer" rel="noreferrer" > <img src={appStore} alt=""/></a>
                
 </div>
 <div className="pt-4 ">
 
-<a href="https://play.google.com/store/apps/details?id=com.digital.equb" class="ctn_footer"><img src={playStore} alt=""/></a>
+<a href="https://apps.apple.com/us/app/digital-equb/id1592078361" target="_blank" class="ctn_footer" rel="noreferrer"><img src={playStore} alt=""/></a>
  
 </div>
         </div>

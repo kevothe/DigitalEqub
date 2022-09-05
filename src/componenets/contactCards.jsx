@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react';
 
 export default  function ContactCard() {
   return (
-  <CardGroup className="mt-5 px-5">
+  <CardGroup className="mt-5 px-5 ">
       
     <Card className='mx-3 border-0'>
       

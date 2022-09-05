@@ -9,7 +9,7 @@ export default function Contact () {
     return(
        
       
-      <div className="service-body">
+      <div className="contact_body">
         <ContactCard/>
         <ContactBody/>
        </div>

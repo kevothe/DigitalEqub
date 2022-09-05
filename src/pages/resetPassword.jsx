@@ -1,16 +1,18 @@
 import React,{useState} from 'react';
 import "react-bootstrap";
 import '.././sass/app.scss';
-import { forgotPassword} from '.././util/APIUtils';
+import { resetPassword} from '.././util/APIUtils';
 
 
   
 export default function     AccountRecovery () {
-  const [actEmail,setEmail]=useState("");
-  const forgotPasswordRequest = {
-    email: actEmail
+  const [actToken,setToken]=useState("");
+  const [actPassword,setPassword]=useState("");
+  const resetPasswordRequest = {
+    token: actToken,
+    password:actToken
   };
-  forgotPassword(forgotPasswordRequest)
+  resetPassword(resetPasswordRequest)
   .then(response => {
       alert.success({
       
@@ -50,11 +52,12 @@ export default function     AccountRecovery () {
       <h3 className="text-center text-success ">Find account</h3>
     <div className="form-group mt-3">
    
-    <input value ={actEmail} onChange={(event)=>setEmail(event.target.value)} type="email" className="form-control bg-white" id="InputEmail"  placeholder="Enter email"/>
+    <input value ={actToken} onChange={(event)=>setToken(event.target.value)} type="Token" className="form-control bg-white" id="InputToken"  placeholder="Enter Token"/>
+    <input value ={actPassword} onChange={(event)=>setPassword(event.target.value)} type="Password" className="form-control bg-white" id="InputPassword"  placeholder="Enter Password"/>
     
   </div>
 
-  <button type="submit" className="btn btn-primary mt-4" onClick={() => forgotPassword()}>send recovery email</button>
+  <button type="submit" className="btn btn-primary mt-4" onClick={() => resetPassword()}>Reset Password</button>
 
 
 </form>

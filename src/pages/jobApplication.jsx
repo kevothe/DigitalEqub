@@ -1,8 +1,32 @@
-import React from 'react';
+import React,{useState} from 'react';
 import "react-bootstrap";
 import '.././sass/app.scss';
+import {upload} from '.././util/APIUtils';
+
 
 export default function     JobApp () {
+ 
+  const  [actformData,setformData]=useState("");
+
+  const uploadRequest={
+  
+
+		formData:actformData
+  }
+ upload(uploadRequest)
+      .then(response => {
+          alert.success({
+          
+              message: 'Digital Equb',
+              description: "Thank you! You're successfully registered. Please Login to continue!",
+          });          
+          this.props.history.push("/login");
+      }).catch(error => {
+          alert.error({
+              message: 'Digital Equb',
+              description: error.message || 'Sorry! Something went wrong. Please try again!'
+          });
+      });
     return(
     <>
     <div className="jobApp w-100 flex-row d-flex justify-content-center">
@@ -33,7 +57,8 @@ export default function     JobApp () {
       </div>
   <div className="form-group mt-4">
   <small class="form-text text-muted" id="emailHelp"> Resume</small>
-    <input type="file" className="form-control bg-white"  aria-describedby="emailHelp" placeholder="upload coverletter"/>
+    <input value ={actformData} onChange={(event)=>setformData(event.target.files)} type="file" className="form-control bg-white"  aria-describedby="emailHelp" placeholder="upload coverletter"/>
+    
       </div>
       <div className="form-group mt-4">
       <small class="form-text text-muted"> Cover letter</small>
@@ -42,7 +67,7 @@ export default function     JobApp () {
      </div>
  
   
-  <button type="submit" className="btn btn-primary mt-4">Submit</button>
+  <button type="submit" onClick={() =>upload()} className="btn btn-primary mt-4">Submit</button>
 </form>
         </div>
         </>

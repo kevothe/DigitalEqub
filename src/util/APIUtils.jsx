@@ -24,7 +24,6 @@ const request = (options) => {
 };
 
 
-
 export function login(loginRequest) {
     return request({
         url: API_BASE_URL + "/auth/signin",
@@ -34,10 +33,46 @@ export function login(loginRequest) {
 }
 
 export function signup(signupRequest) {
+ console.log(signupRequest);
     return request({
         url: API_BASE_URL + "/auth/signup",
         method: 'POST',
-        body: JSON.stringify(signupRequest)
+        body: JSON.stringify(signupRequest),
+   
+    });
+   
+}
+
+export function forgotPassword(forgotPassword){
+    return request({
+        url: API_BASE_URL + "/rec/forgot_password",
+        method: 'POST',
+        body: JSON.stringify(forgotPassword)
+    });
+}
+export function resetPassword(resetPasswordRequest){
+    return request({
+        url: API_BASE_URL + "/rec/reset_password",
+        method: 'POST',
+        body: JSON.stringify(resetPasswordRequest)
+    });
+}
+
+export function upload(uploadRequest){
+    const formData = new FormData();
+    formData.append('File', uploadRequest.FormData);
+    return request({
+        url: API_BASE_URL + "/file/upload",
+        method: 'POST',
+        body: formData
+    });
+}
+export function download(downloadRequest)
+{
+    return request({
+        url: API_BASE_URL + "/file/download",
+        method: 'GET',
+        body: JSON.stringify(downloadRequest)
     });
 }
 

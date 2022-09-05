@@ -6,6 +6,7 @@ import { Icon } from '@iconify/react';
 import whiteLogo from'.././assets/TEST.png';
 import playStore from'.././assets/download-1.png';
 import appStore from '.././assets/download-2.png';
+
 export default function FooterNew() {
   return (
     <>
@@ -51,19 +52,19 @@ export default function FooterNew() {
            
             <nav>
             <LinkContainer to="/terms">
-            <Nav.Link className="link-secondary text-white"> <Icon icon=" eos-icons:service" color="#E3C67F"  />Terms</Nav.Link>
+            <Nav.Link className="link-secondary text-white"> <Icon icon="carbon:phone-filled" color="#E3C67F"  />Terms</Nav.Link>
             </LinkContainer>
             </nav>
            
             <nav>
             <LinkContainer to="/vacancy">
-            <Nav.Link className="link-secondary text-white"> <Icon icon=" bxs:briefcase" color="#E3C67F"  />Vacancy</Nav.Link>
+            <Nav.Link className="link-secondary text-white"> <Icon icon="carbon:phone-filled" color="#E3C67F"  />Vacancy</Nav.Link>
             </LinkContainer>
             </nav>
 
             <nav>
             <LinkContainer to="/faq">
-            <Nav.Link className="link-secondary text-white"> <Icon icon=" carbon:phone-filled" color="#E3C67F"  />FAQ</Nav.Link>
+            <Nav.Link className="link-secondary text-white"> <Icon icon="carbon:phone-filled" color="#E3C67F"  />FAQ</Nav.Link>
             </LinkContainer>
             </nav>
     </div>
@@ -86,11 +87,11 @@ export default function FooterNew() {
 <div className="download_footer mt-5 col md-3 mx-3">
 <h3 >DOWNLOAD THE APP</h3>
 <div>
-<a href="https://apps.apple.com/us/app/digital-equb" class="ctn_footer" > <img src={appStore} alt=""/></a>
+<a href="https://play.google.com/store/apps/details?id=com.digital.equb" target="_blank" class="ctn_footer" rel="noreferrer" > <img src={appStore} alt=""/></a>
                
 </div>
 <div className="pt-3">
-<a href="https://play.google.com/store/apps/details?id=com.digital.equb" class="ctn_footer"><img src={playStore} alt =""/></a>
+<a href="https://apps.apple.com/us/app/digital-equb/id1592078361" target="_blank" class="ctn_footer" rel="noreferrer"><img src={playStore} alt =""/></a>
  
 </div>
                  </div>
@@ -101,33 +102,33 @@ export default function FooterNew() {
                </p>
                 <div className="col-3 md-3 d-flex flex-row  px-3 mr-4 justify-content-between pt-2 ">
                  <div classsName="mr-3">
-                  <a href='https://www.facebook.com/DigitalEqub/ '>
+                  <a href='https://www.facebook.com/DigitalEqub/ 'target="_blank" rel="noreferrer">
                  <Icon icon="akar-icons:facebook-fill" color="#e3c67f" width="20" />
                  </a>
                  </div>
                    
               <div>
-                <a href="https://www.instagram.com/digitalequb/ ">
+                <a href='https://www.instagram.com/digitalequb/ ' target="_blank" rel="noreferrer">
              <Icon icon="entypo-social:instagram" color="#e3c67f" width="20"/>
                  </a>
               </div>
               <div>
-              <a href=" https://t.me/digitalequb/ ">
+              <a href=" https://t.me/digitalequb/ "target="_blank" rel="noreferrer">
              <Icon icon="cib:telegram" color="#e3c67f" width="20"/>
                  </a> 
               </div>
               <div>
-              <a href="https://www.tiktok.com/@digitalequb?">
+              <a href="https://www.tiktok.com/@digitalequb?"target="_blank" rel="noreferrer">
               <Icon icon="cib:tiktok" color="#E3C67F" width="20" />
                  </a>
               </div>
               <div>
-              <a href="https://twitter.com/digitalequb/ ">
+              <a href="https://twitter.com/digitalequb/ "target="_blank" rel="noreferrer">
             <Icon  icon="ant-design:twitter-circle-filled" color="#e3c67f" width="20"/>
               </a>
               </div>
               <div>
-              <a href="https://www.linkedin.com/company/digitalequb/ ">
+              <a href="https://www.linkedin.com/company/digitalequb/ "target="_blank" rel="noreferrer">
               <Icon icon="akar-icons:linkedin" color="#e3c67f" width="20"/>
                  </a>
               </div>

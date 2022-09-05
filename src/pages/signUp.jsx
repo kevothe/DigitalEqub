@@ -15,7 +15,7 @@ const signupRequest = {
   email: actEmail,
   username: actUsername,
   password: actPassword      };
-  console.log(signupRequest.name)
+  console.log(signupRequest);
   signup(signupRequest)
       .then(response => {
           alert.success({

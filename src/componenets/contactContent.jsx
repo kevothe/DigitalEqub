@@ -12,7 +12,7 @@ export default function ContactBody() {
   } 
  
   return (
-<div className=" about_det d-flex flex-column flex-lg-row  mx-1 justify-content-center mt-4 text-white pt-5 ">
+<div className=" about_det d-flex flex-column flex-lg-row  mx-1 justify-content-center mt-2 text-white pt-4 ">
 <div className=" col-6 md-4 mx-4 px-0  mb-3" style={{overflow:'hidden'}}>
     
 <Map location={location} zoomLevel={17} /> </div>     
