@@ -10,7 +10,7 @@ export default function FtBox() {
 <div className=" col-6 md-4 mx-4 px-3">
 <div className="ftTitle mt-5">
            
-    <h3>Reliability</h3>
+    <h3 className="display-lg-4 display-2">Reliability</h3>
         </div>
         
     <p>

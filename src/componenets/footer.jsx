@@ -10,22 +10,22 @@ import appStore from '.././assets/download-2.png';
 export default function FooterNew() {
   return (
     <>
-    <div className=" foot_det d-flex flex-column flex-lg-row   mx-0 justify-content-center mt-4 text-white py-5 ">
+    <div className=" foot_det d-flex flex-column flex-lg-row   mx-0 text-sm-center justify-content-center mt-4 text-white py-5 ">
 <div className="about_footer col md-3 mt- mx-4 px-3">
 <div className="img_title d-flex flex-row ">
             <img className="w-25"src={whiteLogo}  alt=""/>
     <h3 className="mt-5 pl-2">ABOUT US</h3>
         </div>
         
-    <p className="mt-2 ">
+    <p className="mt-2 col ">
           Ut sem nulla pharetra diam sit amet nisl suscipit adipiscing. Tristique senectus et netus et malesuada fames ac. Ac odio tempor orci dapibus ultrices in iaculis.
     </p>
 </div>
 
-<div className="links_footer col-1 mt-5 md-3 mx-3">
+<div className="links_footer col-lg-1 col-12 mt-5 md-3 mx-3">
 
 <h3 >LINKS</h3>
-<nav>
+<nav >
    <LinkContainer to="/home">
             <Nav.Link className="link-secondary text-white"> <Icon icon="bi:house-door-fill" color="#E3C67F"  />Home</Nav.Link>
             </LinkContainer>
